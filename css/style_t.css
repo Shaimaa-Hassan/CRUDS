@@ -1,0 +1,78 @@
+/* 1.global style  */
+/* 2.common style */
+/* general style.............................................................................. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* small screen */
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+/* medium screen */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* large screen */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #222 !important;
+    color: #fff !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* :root{ */
+    /* --main-color:; */
+    /* --main-transition:; */
+    /* --section-padding:; */
+    /* --bg-color:; */
+/* } */
+
+
+input:focus{
+    background-color: #000 !important;
+    transform: scaley(1.1) ;
+}
+#total::before{
+content: "total : ";
+color: rgb(248, 178, 178);
+text-transform: capitalize;
+}
+
+.inpbtn:hover{
+    background: #51025f !important;
+    letter-spacing: 1px;
+}
+input::placeholder{
+    text-transform: capitalize;
+}
+
+@media (max-width:768px) {
+    .price{
+        flex-direction: column;
+        align-items: center;
+    }
+    .price input{
+        width: 100% !important;
+    }
+    #search-category{
+        font-size: 14px ;
+    }
+}
